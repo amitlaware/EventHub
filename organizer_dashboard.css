@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+body {
+
+    background-color: #000;
+    color: #fff;
+    background-image: url("BG.jpeg");
+    width: 100%;
+    background-size: cover;
+}
+.material-symbols-outlined {
+    font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0, 'opsz' 24;
+    color:white;
+}
+#home{
+    margin-top: 50px;
+    margin-left:35px;
+    transform: scale(1.5);
+
+}
+#notification{
+    margin-top: 50px;
+    float:right;
+    margin-right:35px;
+    transform: scale(1.5);
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 2px solid #c0c0c0; /* Silver color */
+    border-radius: 8px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+
+    /*background: rgba(0, 0, 0, 0.8); !* Semi-transparent black *!*/
+    background: transparent;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fbc600; /* Golden color */
+    font-family: 'Cinzel Decorative', serif;
+    /*text-shadow: 2px 2px 2px #fbc600;*/
+}
+img{
+    position:absolute;
+    height:100px;
+    width:100px;
+    margin-top:70px;
+    margin-left:110px;
+}
+
+button {
+
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#fbc600; /* Darker golden color */
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /*background-color: #b38e2d; !* Darker golden color *!*/
+    background-color: #383735; /* Darker golden color */
+    /*background-color: transparent; !* Golden color *!*/
+}
+@media screen max-width:{
+
+}
+

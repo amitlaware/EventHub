@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    font-family: 'Cinzel Decorative', serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url("BG.jpeg");
+    /*width: 100%;*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
+
+img{
+    position:absolute;
+    height:100px;
+    width:100px;
+    margin-top:70px;
+    margin-left:10px;
+}
+.container {
+    width: 400px;
+    margin: 60px auto;
+    background: transparent;
+    padding: 20px;
+    border: 2px solid #847e7e;
+    border-radius: 8px;
+    box-shadow: 15px 15px 15px rgba(154, 151, 151, 0.5);
+}
+
+
+h1 {
+    color: #fdd017;
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffd700; /* Golden */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffd700;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #e1c001;
+    font-family: 'Cinzel Decorative', serif;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #111111; /* Black */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffd700; /* Silver */
+    color: #fefefe; /* Black */
+}
+
+label.royal-font:hover {
+    color: #ffd700;
+}
+/* Existing CSS */
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+/* Media Query for medium-sized screens */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+        margin-top: 40px; /* Adjusted margin for medium screens */
+        margin-left: 20px; /* Adjusted margin for medium screens */
+    }
+}
+
+/* Media Query for large screens */
+@media screen and (min-width: 901px) {
+    .container {
+        width: 800px;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+        margin-top: 70px; /* Adjusted margin for large screens */
+        margin-left: 30px; /* Adjusted margin for large screens */
+    }
+}
+
+/* Additional media queries and adjustments for other screen sizes as needed */

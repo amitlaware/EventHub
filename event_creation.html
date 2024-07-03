@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Creation</title>
+    <link rel="stylesheet" href="event_creation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap">
+</head>
+<body>
+<img src="logo1.png" id="logo" style="height: 100px ;position:absolute; margin:100px">
+<span class="material-symbols-outlined" id="home">home</span>
+<form id="eventForm" action="eventCreation" method="POST" >
+    <h1 id="heading">Create Event</h1>
+    Event Name:<label for="eventName1"></label><input type="text" id="eventName1" name="eventName1" required><br> <br/>
+    Date:<label for="eventDate1"></label><input type="date" id="eventDate1" name="eventDate1" required><br><br/>
+    Time:<label for="eventTime1"></label><input type="time" id="eventTime1" name="eventTime1" required><br><br/>
+    Venue: <label for="eventVenue1"></label><input type="text" id="eventVenue1" name="eventVenue1" required ><br><br/>
+    Description: <label for="eventDescription1"></label><textarea id="eventDescription1" name="eventDescription1" rows="4" cols="50" required></textarea><br><br/>
+
+    Event Type: <label for="eventType1"></label><select id="eventType1" name="eventType1" required>
+        <option value="workshop">Workshop</option>
+        <option value="guestLecture">Guest Lecture</option>
+        <option value="presentation">Presentation</option>
+        <option value="other">Other</option>
+    </select><br><br/>
+
+    <label>Ticket Options:</label><br>
+    <input type="checkbox" id="vipTicket" name="ticketOptions1" value="VIP">
+    <label for="vipTicket">VIP</label><br>
+    <input type="checkbox" id="regularTicket" name="ticketOptions1" value="Regular">
+    <label for="regularTicket">Regular Attendee</label><br>
+    <input type="checkbox" id="committeeTicket" name="ticketOptions1" value="Committee Member">
+    <label for="committeeTicket">Committee Member</label><br>
+
+    <button type="submit">Create Event</button>
+</form>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Event Creation</title>-->
+<!--    <link rel="stylesheet" href="event_creation.css">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1 class="royal-font">Create Event</h1>-->
+<!--<form action="eventCreation"  id="eventForm" method="POST"  >-->
+
+<!--    <label for="eventName1" class="royal-font">Event Name:</label><input type="text" id="eventName1" name="eventName1" required style="font-family: 'Playfair Display', serif;"><br> <br/>-->
+<!--    <label for="eventDate1" class="royal-font">Date:</label><input type="date" id="eventDate1" name="eventDate1" required style="font-family: 'Playfair Display', serif;"><br><br/>-->
+<!--    <label for="eventTime1" class="royal-font">Time:</label><input type="time" id="eventTime1" name="eventTime1" required style="font-family: 'Playfair Display', serif;"><br><br/>-->
+<!--     <label for="eventVenue1" class="royal-font">Venue:</label><input type="text" id="eventVenue1" name="eventVenue1" required style="font-family: 'Playfair Display', serif;"><br><br/>-->
+<!--    <label for="eventDescription1" class="royal-font">Description:</label><textarea id="eventDescription1" name="eventDescription1" rows="4" cols="50" required style="font-family: 'Playfair Display', serif;"></textarea><br><br/>-->
+
+<!--     <label for="eventType1" class="royal-font">Event Type:</label><select id="eventType1" name="eventType1" required style="font-family: 'Playfair Display', serif;">-->
+<!--        <option value="workshop">Workshop</option>-->
+<!--        <option value="guestLecture">Guest Lecture</option>-->
+<!--        <option value="presentation">Presentation</option>-->
+<!--        <option value="other">Other</option>-->
+<!--    </select><br><br/>-->
+
+<!--    <label class="royal-font">Ticket Options:</label><br>-->
+<!--    <input type="checkbox" id="vipTicket" name="ticketOptions1" value="VIP">-->
+<!--    <label for="vipTicket" class="royal-font">VIP</label><br>-->
+<!--    <input type="checkbox" id="regularTicket" name="ticketOptions1" value="Regular">-->
+<!--    <label for="regularTicket" class="royal-font">Regular Attendee</label><br>-->
+<!--    <input type="checkbox" id="committeeTicket" name="ticketOptions1" value="Committee Member">-->
+<!--    <label for="committeeTicket" class="royal-font">Committee Member</label><br>-->
+
+<!--    <button type="submit" class="royal-button">Create Event</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
